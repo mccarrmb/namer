@@ -6,18 +6,18 @@ require "namer/version"
 Gem::Specification.new do |spec|
   spec.name          = "namer"
   spec.version       = Namer::VERSION
-  spec.authors       = ["Whitey McCarragher"]
+  spec.authors       = ["Matt McCarragher"]
   spec.email         = ["matt.mccarragher@online-rewards.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Name creator}
+  spec.description   = %q{Generates a memorable, temporary verb-noun name}
+  spec.homepage      = "https://github.com/mccarrmb/namer.git"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata["allowed_push_host"] = "http://online-rewards-qa.com"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
