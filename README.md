@@ -1,3 +1,3 @@
-# Test-Repo
+# Namer
 
-This file should trigger the buildbot process
+A repo for namer gem.
