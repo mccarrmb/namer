@@ -12,4 +12,8 @@ class NamerTest < Minitest::Test
   def test_does_it_return_a_string
     assert((::Namer::do).is_a?(String))
   end
+
+  def test_does_it_return_different_strings_every_call
+    assert((::Namer::do).eql?(::Namer::do))
+  end
 end
