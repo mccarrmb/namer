@@ -14,6 +14,6 @@ class NamerTest < Minitest::Test
   end
 
   def test_does_it_return_different_strings_every_call
-    assert((::Namer::do).eql?(::Namer::do))
+    assert(!::Namer::do.eql?(::Namer::do))
   end
 end
