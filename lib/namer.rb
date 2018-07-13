@@ -1,7 +1,9 @@
 require "namer/version"
 
 module Namer
-  def do
-    
+  
+  def self.do
+    "farty-baby"
   end
+
 end
