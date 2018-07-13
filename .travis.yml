@@ -6,6 +6,7 @@ language: ruby
 cache: bundler
 rvm:
   - 2.5.0
+  - ruby-head
 before_install: 
   - gem install bundler -v 1.16.2
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter

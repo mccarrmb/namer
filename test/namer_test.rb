@@ -6,6 +6,6 @@ class NamerTest < Minitest::Test
   end
 
   def test_it_does_something_useful
-    assert true
+    assert ::Namer::do
   end
 end
