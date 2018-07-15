@@ -1,10 +1,8 @@
 * text=auto eol=lf
 
 # Sources
-*.acs   text
-*.dbs   text
-*.md    text
+*.rb     text
+*.rake   text
+*.md     text
 
-# Binary files
-*.wad   binary
-*.WAD   binary
+
