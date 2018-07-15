@@ -9,11 +9,13 @@ rvm:
   - 2.5.0
   - 2.5.1
   - ruby-head
-before_install: 
+before_install: gem install bundler -v 1.16.1
+before_script: 
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
-after_install:
+script: bundle exec rake
+after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 matrix:
   allow_failures:
