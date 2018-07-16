@@ -9,11 +9,9 @@ module Namer
   
   def self.do(language = "en")
     if (Locale.current.language.eql?("de") || language.eql?("de"))
-      @@nouns_de[rand*@@nouns_de.length] + "-" + @@verbs_de[rand*@@verbs_de.length]
+      return @@nouns_de[rand*@@nouns_de.length] + "-" + @@verbs_de[rand*@@verbs_de.length]
     end
-    @@verbs[rand*@@verbs.length] + "-" + @@nouns[rand*@@nouns.length]
+    return @@verbs[rand*@@verbs.length] + "-" + @@nouns[rand*@@nouns.length]
   end
-
-
 
 end
