@@ -1,12 +1,10 @@
 AllCops:
   Includes:
     - Rakefile
-    - google-automator.rb
-    - tests/**
-    - pages/**
     - lib/**
+    - test/**
   Excludes:
     - bin/**
-    - log/**
+    - pkg/**
 Documentation:
   Enabled: false
