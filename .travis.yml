@@ -12,7 +12,7 @@ rvm:
   - 2.5.1
   - ruby-head
 before_install: 
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then gpg --import rvm.gpg && rvm get head; fi- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB && rvm get head; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then gpg --import rvm.gpg && rvm get head; fi
   - gem install bundler
 before_script: 
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-darwin-amd64 > ./cc-test-reporter; fi
