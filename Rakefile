@@ -12,9 +12,4 @@ RuboCop::RakeTask.new do |t|
   t.fail_on_error = false
 end
 
-require 'reek/rake/task'
-Reek::Rake::Task.new do |t|
-  t.fail_on_error = false
-end
-
-task default: %w[test rubocop reek]
+task default: %w[test rubocop]
