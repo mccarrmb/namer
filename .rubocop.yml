@@ -1,2 +1,8 @@
 Style/Documentation:
   Enabled: false
+Metrics/LineLength:
+  Enabled: false
+Style/StringLiterals:
+  Enabled: false
+Layout/LeadingBlankLines:
+  Enabled: false
