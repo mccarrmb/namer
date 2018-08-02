@@ -6,7 +6,7 @@ class NamerTest < Minitest::Test
   end
 
   def test_does_it_not_blow_up
-    assert(::Namer::do)
+    assert(!::Namer::do)
   end
 
   def test_does_it_return_a_string
