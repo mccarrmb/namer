@@ -6,3 +6,5 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gemspec
 
 gem "locale", "~> 2.1"
+
+gem "rubocop", "~> 0.58.2"
