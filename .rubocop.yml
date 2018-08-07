@@ -1,3 +1,6 @@
+AllCops:
+  Exclude:
+   - .git/**
 Style/Documentation:
   Enabled: false
 Metrics/LineLength:

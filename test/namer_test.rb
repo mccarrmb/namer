@@ -17,4 +17,3 @@ class NamerTest < Minitest::Test
     assert((::Namer.do =~ /\s/).nil?)
   end
 end
-
