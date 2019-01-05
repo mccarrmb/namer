@@ -13,7 +13,7 @@ RuboCop::RakeTask.new do |t|
 end
 
 task :mutants do
-  sh 'bundle exec mutant --use minitest -I test/ -r namer.rb Namer'
+  sh 'bundle exec mutant --use minitest --require namer.rb'
 end
 
 task default: %w[test rubocop]
