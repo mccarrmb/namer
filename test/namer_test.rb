@@ -24,6 +24,6 @@ class NamerTest < Minitest::Test
     Namer.do
     pass
   rescue StandardError
-    flunk
+    flunk('An exception was raised!')
   end
 end
