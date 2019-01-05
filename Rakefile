@@ -12,4 +12,8 @@ RuboCop::RakeTask.new do |t|
   t.fail_on_error = false
 end
 
+task :mutants do
+  sh 'bundle exec mutant --use minitest -I test/ -r namer.rb Namer'
+end
+
 task default: %w[test rubocop]
